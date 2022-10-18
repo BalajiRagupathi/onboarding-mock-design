@@ -1,0 +1,28 @@
+.plan-selection-box {
+    border: 1px solid #e5e7ec;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.plan-active {
+    border: 1px solid #664de5;
+}
+
+.plan-selection-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.plan-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.plan-paragraph {
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    margin-top: 10px;
+}

@@ -1,0 +1,223 @@
+.color-gray {
+  color: rgb(157, 155, 155) !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 5rem auto 0 auto;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 40px;
+}
+
+nav a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  height: 40px;
+  font-size: 1.5rem;
+  border: 2px solid #e5e7ec;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav a.active {
+  background-color: #664de5;
+  color: white;
+  transition: all 0.6s;
+}
+
+nav a:first-child.active ~ .line {
+  width: 20%;
+}
+nav a:nth-child(2).active ~ .line {
+  width: 50%;
+}
+nav a:nth-child(3).active ~ .line {
+  width: 80%;
+}
+nav a:nth-child(4).active ~ .line {
+  width: 100%;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+  width: 0;
+  height: 2px;
+  background: #664de5;
+  transition: width 0.5s cubic-bezier(1, 0, 0.5, 1.01);
+}
+
+.line2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: -2;
+  width: 100%;
+  height: 2px;
+  background: #e5e7ec;
+  transition: width 0.5s cubic-bezier(1, 0, 0.5, 1.01);
+}
+
+.content {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding-content {
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.onboarding-title {
+  font-size: 3.5rem;
+}
+
+.onboarding-paragraph {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.onboarding-inputs {
+  width: 40%;
+}
+
+.onboarding-plan-box {
+  width: 40%;
+}
+
+.plan-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  grid-column-gap: 40px;
+}
+
+.onboarding-completion {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  font-size: 1.7rem;
+  background-color: #664de5;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 78.15em) {
+  .container {
+    width: 80%;
+  }
+  nav {
+    width: 40%;
+  }
+  .onboarding-inputs {
+    width: 50%;
+  }
+  .onboarding-plan-box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 61.25em) {
+  html {
+    font-size: 47%;
+  }
+  .container {
+    width: 70%;
+  }
+  nav {
+    width: 45%;
+  }
+  .onboarding-inputs {
+    width: 55%;
+  }
+  .onboarding-plan-box {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    width: 60%;
+  }
+  .container {
+    width: 95%;
+  }
+  .onboarding-inputs {
+    width: 70%;
+  }
+  .onboarding-paragraph {
+    font-size: 1.8rem;
+  }
+  .onboarding-completion {
+    width: 50px;
+    height: 50px;
+  }
+  .onboarding-plan-box {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 38%;
+  }
+  nav {
+    width: 75%;
+  }
+  .onboarding-inputs {
+    width: 85%;
+  }
+  .plan-selection-box {
+    padding: 15px;
+  }
+  .plan-selection-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .onboarding-plan-box {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 125em) {
+  html {
+    font-size: 100%;
+  }
+}
